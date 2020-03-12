@@ -7,11 +7,11 @@ function startVideo(){
 const audio = document.getElementById('audio');
 
 Promise.all([
-  faceapi.nets.tinyFaceDetector.loadFromUri("expression-music-player/models"),
-  faceapi.nets.faceLandmark68Net.loadFromUri("expression-music-player/models"),
-  faceapi.nets.faceRecognitionNet.loadFromUri("expression-music-player/models"),
-  faceapi.nets.faceExpressionNet.loadFromUri("expression-music-player/models"),
-  faceapi.nets.ageGenderNet.loadFromUri("expression-music-player/models")
+  faceapi.nets.tinyFaceDetector.loadFromUri("./models"),
+  faceapi.nets.faceLandmark68Net.loadFromUri("./models"),
+  faceapi.nets.faceRecognitionNet.loadFromUri("./models"),
+  faceapi.nets.faceExpressionNet.loadFromUri("./models"),
+  faceapi.nets.ageGenderNet.loadFromUri("./models")
 ]).then(startVideo);
 
 video.addEventListener("playing",()=>
