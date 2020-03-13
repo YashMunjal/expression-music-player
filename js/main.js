@@ -23,9 +23,9 @@ video.addEventListener("playing",()=>
 
 
 //audios
-const happy_audios = ['/audios/happy_audio/2.mp3','/audios/happy_audio/1.mp3'];
-const sad_sounds = ['/audios/sad_sounds/1.mp3'];
-const angry_audios = ['/audios/angry_audio/1.mp3']; 
+const happy_audios = ['./audios/happy_audio/2.mp3','/audios/happy_audio/1.mp3'];
+const sad_sounds = ['./audios/sad_sounds/1.mp3'];
+const angry_audios = ['./audios/angry_audio/1.mp3']; 
 
 var flag_happy=0;
 var flag_sad=1000;
