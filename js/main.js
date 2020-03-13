@@ -41,13 +41,12 @@ setInterval(async () => {
 
     canvas.getContext("2d").clearRect(0, 0, canvas.width, canvas.height);
     //expression logic
-    const neutral  =resizedDetections[0].expressions.neutral;
     const happy  =resizedDetections[0].expressions.happy;
     const sad  =resizedDetections[0].expressions.sad;
     const surprised  =resizedDetections[0].expressions.surprised;
     const disgusted  =resizedDetections[0].expressions.disgusted;
     const angry  =resizedDetections[0].expressions.angry;
-  console.log(resizedDetections);
+    const neutral  =resizedDetections[0].expressions.neutral;
     //The Issue
     if(happy>0.9)
     {
@@ -96,7 +95,7 @@ setInterval(async () => {
       audio.src=emit;
       flag_happy=0;
       flag_sad=1000;
-
+      audio.play();
     }
     else if(f==0)
     {
